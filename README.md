@@ -1,56 +1,80 @@
-# skysight
+# SkySight: Weather Dashboard
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+SkySight is a simple and intuitive weather dashboard that provides users with up-to-date weather information for any location. With SkySight, you can quickly access current weather conditions, short-term forecasts, and long-term forecasts in a user-friendly interface.
 
-## Prerequisites
+## Skysight is a work in progress
 
-You will need the following things properly installed on your computer.
+## Features
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://cli.emberjs.com/release/)
-* [Google Chrome](https://google.com/chrome/)
+- Search for a location or use your current location (using the Geolocation API)
+- Display current weather conditions, including temperature, humidity, wind speed, and an icon representing the weather (e.g., sunny, cloudy, rainy)
+- Show a short-term forecast for the next few hours and a longer-term forecast for the next several days
+- Allow users to switch between Celsius and Fahrenheit temperature units
 
-## Installation
+## Getting Started
 
-* `git clone <repository-url>` this repository
-* `cd skysight`
-* `npm install`
+These instructions will help you set up the project on your local machine for development and testing purposes.
 
-## Running / Development
+### Prerequisites
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+- Node.js (LTS version recommended, visit https://nodejs.org/ to download and install)
+- npm (Node.js package manager, it comes with Node.js)
+- Git (Visit https://git-scm.com/ to download and install)
+- API key for the weather data provider (e.g., OpenWeatherMap or WeatherAPI)
 
-### Code Generators
+### Installation
 
-Make use of the many generators for code, try `ember help generate` for more details
+1. Clone the repository:
 
-### Running Tests
+```
+git clone https://github.com/yourusername/skysight.git
+```
 
-* `ember test`
-* `ember test --server`
+2. Change to the project directory:
 
-### Linting
+```
+cd skysight
+```
 
-* `npm run lint`
-* `npm run lint:fix`
+3. Install dependencies:
 
-### Building
+```
+npm install
+```
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+4. Create a `.env` file in the project root directory and add your weather API key:
 
-### Deploying
+```
+WEATHER_API_KEY=your_api_key_here
+```
 
-Specify what it takes to deploy your app.
+5. Run the development server:
 
-## Further Reading / Useful Links
+```
+ember serve
+```
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://cli.emberjs.com/release/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+Open your web browser and navigate to `http://localhost:4200/` to view the application.
+
+## Deployment
+
+To build the application for production, run:
+
+```
+ember build --environment=production
+```
+
+The compiled assets will be available in the `dist/` folder. Deploy the contents of this folder to your preferred hosting provider.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Weather data provided by [OpenWeatherMap](https://openweathermap.org/api) or [WeatherAPI](https://www.weatherapi.com/)
+- Built with [Ember.js](https://emberjs.com/)
+
+---
+
+**Note**: Be sure to replace placeholders (e.g., `yourusername`, `your_api_key_here`) with your actual information. Customize the README to match your project's details and requirements.
